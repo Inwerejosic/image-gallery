@@ -13,8 +13,6 @@ const thumbnailsContainer = document.querySelector('.thumbnails');
 let content = '';
 
 images.map(image => {
-    //We use the map array method to visit every array element,
-    //And add a boilerplate code containing an image to the content variable
     content += `<div class="img-container">
         <img src="./images/${image}" alt="${image}" onclick="showModal(this)"/>
     </div> \n`
