@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inwere-Gallery</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <h2>Inwerejosic Gallery</h2>
+
+    <div class="gallery-container">
+        <div class="default-image">
+        </div>
+        <div class="thumbnails">
+            <img src="/images/img5.jpg" alt="default-image">
+
+        </div>
+
+        <div class="modal invisible" onclick="modalDisappear()" id="modal-container">
+            <!--- The stopPropagation() was brought into play to ennsure that 
+            only a click on the modal close icon or outside the modal can close an image on the modal-->
+            <img src="" alt="" class="modal-image" onclick="event.stopPropagation()" />
+            <span style='color:white;size:22px;'><i class="fas fa-times-circle fa-3x"></i></span>
+        </div>
+
+    </div>
+
+    <script src="./js/app.js">
+    </script>
+</body>
+
+</html>
